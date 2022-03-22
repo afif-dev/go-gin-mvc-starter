@@ -10,12 +10,12 @@
 <div class="row mb-4">
         {{ range .results.data }}
         <div class="col-3">
-                <div class="article-{{ .ID }} card my-3">
+                <div class="article-{{ .ID }} card border-primary my-3">
                         <div class="card-body">
                                 <h5 class="card-title">{{ .Title }}</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">{{ .CreatedAt.Format "Monday, 02-Jan-06 15:04:05" }}</h6>
                                 <p class="card-text">{{ .Short_Desc }}</p>
-                                <a href="/article/{{ .ID }}" class="card-link">Read More</a>
+                                <a href="/article/{{ .ID }}" class="btn btn-primary stretched-link"><i class="bi bi-chevron-double-right"></i> Read more</a>
                         </div>
                 </div>
         </div>

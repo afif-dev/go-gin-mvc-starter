@@ -14,6 +14,7 @@ import (
 
 func InitRouter() *gin.Engine {
 
+	// # Uncomment this code to load .env file
 	// err := godotenv.Load()
 	// if err != nil {
 	// 	log.Fatal("Error loading .env file")
@@ -21,12 +22,12 @@ func InitRouter() *gin.Engine {
 
 	gin.SetMode(os.Getenv("GIN_MODE"))
 
-	// Disable log's color
+	// # Disable log's color
     gin.DisableConsoleColor()
-	// Force log's color
+	// # Force log's color
 	// gin.ForceConsoleColor()
 
-    // Logging to a file.
+    // # Logging to a file.
     f, _ := os.Create("logs/gin.log")
     gin.DefaultWriter = io.MultiWriter(f)
 
@@ -38,10 +39,10 @@ func InitRouter() *gin.Engine {
 	
 	r.Static("/static", "./static")
 	
-	//Template Engine
+	// # Template Engine
 	r.HTMLRender = ginview.Default()
 
-	//Page Router
+	// # Page Router
 	r.GET("/", controllers.IndexPage, middlewares.TestMw())
 	r.GET("/structure", controllers.StructurePage)
 	r.GET("/credits", controllers.CreditPage)
@@ -49,7 +50,7 @@ func InitRouter() *gin.Engine {
 	r.GET("/article/:id", controllers.GetArticlePage)
 	r.GET("/api", controllers.ApiPage)
 
-	//API Group Router
+	// # API Group Router
 	api := r.Group("/api") 
 	{
 		api.GET("/articles", controllers.GetArticlesAPI)

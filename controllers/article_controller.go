@@ -70,7 +70,7 @@ func  GetArticlesPage(c *gin.Context) {
 	}
 	if page_curr <= page_total {
 		c.HTML(http.StatusOK, "articles/index", gin.H{
-			"title": "Articles Page",
+			"title": "Articles",
 			"pg_page": page,
 			"results": results,
 			// "safeHTML": func(v string) template.HTML {
