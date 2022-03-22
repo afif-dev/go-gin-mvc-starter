@@ -1,0 +1,46 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /                         --> gin-mvc/middlewares.TestMw.func1 (4 handlers)
+[GIN-debug] GET    /structure                --> gin-mvc/controllers.StructurePage (3 handlers)
+[GIN-debug] GET    /credits                  --> gin-mvc/controllers.CreditPage (3 handlers)
+[GIN-debug] GET    /articles                 --> gin-mvc/controllers.GetArticlesPage (3 handlers)
+[GIN-debug] GET    /article/:id              --> gin-mvc/controllers.GetArticlePage (3 handlers)
+[GIN-debug] GET    /api                      --> gin-mvc/controllers.ApiPage (3 handlers)
+[GIN-debug] GET    /api/articles             --> gin-mvc/controllers.GetArticlesAPI (3 handlers)
+[GIN-debug] GET    /api/article/:id          --> gin-mvc/controllers.GetArticle (3 handlers)
+[GIN-debug] POST   /api/article              --> gin-mvc/controllers.AddArticle (3 handlers)
+[GIN-debug] PUT    /api/article              --> gin-mvc/controllers.UpdateArticle (3 handlers)
+[GIN-debug] DELETE /api/article              --> gin-mvc/controllers.DeleteArticle (3 handlers)
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2022/03/22 - 16:59:24 | 200 |      1.9977ms |             ::1 | GET      "/"
+[GIN] 2022/03/22 - 16:59:24 | 200 |       915.3µs |             ::1 | GET      "/structure"
+[GIN] 2022/03/22 - 16:59:25 | 200 |      1.1541ms |             ::1 | GET      "/credits"
+[GIN] 2022/03/22 - 16:59:26 | 200 |    718.2646ms |             ::1 | GET      "/articles"
+[GIN] 2022/03/22 - 16:59:26 | 200 |      1.2378ms |             ::1 | GET      "/api"
+[GIN] 2022/03/22 - 16:59:26 | 200 |       212.9µs |             ::1 | GET      "/credits"
+[GIN] 2022/03/22 - 16:59:27 | 200 |       640.9µs |             ::1 | GET      "/api"
+[GIN] 2022/03/22 - 16:59:28 | 200 |    360.7377ms |             ::1 | GET      "/articles"
+[GIN] 2022/03/22 - 16:59:28 | 200 |       718.8µs |             ::1 | GET      "/api"
+[GIN] 2022/03/22 - 16:59:29 | 200 |            0s |             ::1 | GET      "/api"
+[GIN] 2022/03/22 - 16:59:29 | 200 |    431.5711ms |             ::1 | GET      "/articles"
+[GIN] 2022/03/22 - 16:59:30 | 200 |       309.3µs |             ::1 | GET      "/api"
+[GIN] 2022/03/22 - 16:59:31 | 200 |    358.2286ms |             ::1 | GET      "/articles"
+[GIN] 2022/03/22 - 16:59:33 | 200 |    539.8878ms |             ::1 | GET      "/articles?page=2"
+[GIN] 2022/03/22 - 16:59:36 | 200 |    360.0757ms |             ::1 | GET      "/article/2"
+[GIN] 2022/03/22 - 16:59:37 | 200 |    359.8461ms |             ::1 | GET      "/articles"
+[GIN] 2022/03/22 - 16:59:39 | 200 |    179.6096ms |             ::1 | GET      "/article/7"
+[GIN] 2022/03/22 - 16:59:42 | 200 |    362.4712ms |             ::1 | GET      "/articles"
+[GIN] 2022/03/22 - 16:59:44 | 200 |    179.3877ms |             ::1 | GET      "/article/8"
+[GIN] 2022/03/22 - 16:59:45 | 200 |    360.2789ms |             ::1 | GET      "/articles"
+[GIN] 2022/03/22 - 16:59:47 | 200 |            0s |             ::1 | GET      "/structure"
+[GIN] 2022/03/22 - 16:59:48 | 200 |    358.0224ms |             ::1 | GET      "/articles"
+[GIN] 2022/03/22 - 16:59:49 | 200 |       456.7µs |             ::1 | GET      "/api"
+[GIN] 2022/03/22 - 16:59:49 | 200 |         994µs |             ::1 | GET      "/credits"
+[GIN] 2022/03/22 - 16:59:50 | 200 |       647.4µs |             ::1 | GET      "/"

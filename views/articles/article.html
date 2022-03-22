@@ -1,0 +1,16 @@
+{{define "head"}}{{end}}
+
+{{define "content"}}
+<h1 class="pt-5">{{ .title }}</h1>
+<h6 class="mb-4 text-muted d-inline-block" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title='Updated on <br/> {{ .results.UpdatedAt.Format "Monday, 02-Jan-06 15:04:05" }}'>
+    {{ .results.CreatedAt.Format "Monday, 02-Jan-06 15:04:05" }}
+</h6>
+{{if .results.Content }}
+<div class="content mb-4">
+    {{ .results.Content }}
+</div>
+{{end}}
+<p>
+    <a href="/articles"><i class="bi bi-arrow-left-short"></i> Back to Articles</a>
+</p>
+{{end}}

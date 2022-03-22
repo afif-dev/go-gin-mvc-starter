@@ -1,0 +1,45 @@
+{{define "head"}}{{end}}
+
+{{define "content"}}
+<h1 class="pt-5">{{ .title }} 📁</h1>
+<p class="lead">Folder structure for Go GIN MVC Starter</p>
+<div class="row">
+        <div class="col">
+                <img src="/static/img/go-gin-mvc-structure.jpg" class="img-fluid" alt="folder-structure">
+        </div>
+        <div class="col">
+                <p><strong>Folders and Files</strong></h5>
+                <ol>
+                        <li>📁 console</li>
+                        <li>📁 controllers</li>
+                        <li>📁 logs</li>
+                        <li>📁 middlewares</li>
+                        <li>📁 models</li>
+                        <li>📁 router</li>
+                        <li>📁 static
+                                <ul>
+                                        <li>📁 css</li>
+                                        <li>📁 img</li>
+                                        <li>📁 js</li>
+                                </ul>
+                        </li>
+                        <li>📁 views
+                                <ul>
+                                        <li>📁 articles</li>
+                                        <li>📁 layouts</li>
+                                        <li>📁 page</li>
+                                </ul>
+                        </li>
+                        <li>📄 .env</li>
+                        <li>⭐ favicon.ico</li>
+                        <li>📄 go.mod</li>
+                        <li>📄 go.sum</li>
+                        <li>📄 server.go</li>
+                </ol>
+                <p>
+                        * Cron task implement in console folder.<br />
+                        * Bootstrap 5 and icons in /static/css/ folder.
+                </p>
+        </div>
+</div>
+{{end}}

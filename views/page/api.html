@@ -1,0 +1,31 @@
+{{define "head"}}{{end}}
+
+{{define "content"}}
+<h2 class="pt-5">{{ .title }} ✨🔌</h2>
+<p class="lead">Articles API build with MVC architectural pattern</p>
+
+<ol>
+    <li>
+        <p>GET: articles</p>
+        <p class="rounded bg-secondary text-white py-2 px-4 d-inline-block">curl http://localhost:8080/api/articles?page=1</p>
+    </li>
+    <li>
+        <p>GET: article by Id</p>
+        <p class="rounded bg-secondary text-white py-2 px-4 d-inline-block">curl http://localhost:8080/api/article/1</p>
+    </li>
+    <li>
+        <p>POST: add article. form-data (title, short_desc, content, tags)</p>
+        <p class="rounded bg-secondary text-white py-2 px-4 d-inline-block">curl -X POST --form "title=Test Title" --form "short_desc=Test short desc" --form "content=Test content" --form "tags=test,api,mvc,go,gin"
+            http://localhost:8080/api/article</p>
+    </li>
+    <li>
+        <p>PUT: update article. form-data (id, title, short_desc, content, tags)</p>
+        <p class="rounded bg-secondary text-white py-2 px-4 d-inline-block">curl -X PUT --form "id=1" --form "title=Update Title" --form "tags=test,api,mvc,go,gin" http://localhost:8080/api/article</p>
+    </li>
+    <li>
+        <p>DELETE: delete article. form-data (id)</p>
+        <p class="rounded bg-secondary text-white py-2 px-4 d-inline-block">curl -X DELETE --form "id=4" http://localhost:8080/api/article</p>
+    </li>
+</ol>
+
+{{end}}
