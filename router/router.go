@@ -5,21 +5,19 @@ import (
 	"gin-mvc/middlewares"
 	"gin-mvc/models"
 	"io"
-	"log"
 	"os"
 
 	"github.com/foolin/goview/supports/ginview"
 	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
 )
 
 
 func InitRouter() *gin.Engine {
 
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
+	// err := godotenv.Load()
+	// if err != nil {
+	// 	log.Fatal("Error loading .env file")
+	// }
 
 	gin.SetMode(os.Getenv("GIN_MODE"))
 
