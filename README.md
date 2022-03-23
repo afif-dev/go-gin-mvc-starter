@@ -12,3 +12,18 @@ For document check this url: https://gin-mvc-starter.onrender.com/
 https://gin-mvc-starter.onrender.com/structure
 
 ![go gin mvc starter - folders & files](https://raw.githubusercontent.com/afif-dev/go-gin-mvc-starter/main/static/img/go-gin-mvc-structure.jpg)
+
+##
+
+### Note
+
+.env usage:
+- rename .env-example to .env
+- uncomment code in router/router.go & console/main_console.go
+```
+// # Uncomment this code to load .env file
+// err := godotenv.Load()
+// if err != nil {
+// 	log.Fatal("Error loading .env file")
+// }
+```
