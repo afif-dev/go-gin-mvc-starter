@@ -3,13 +3,13 @@
 
 Gin starter with MVC, ORM, template library, Bootstrap 5 and cronjob for Web and API. Build with package or module: GIN, GORM, GoDotEnv, Bootstrap 5, Goview, Cron.
 
-For document check this url: https://gin-mvc-starter.onrender.com/
+For document check this url: https://gin-mvc-starter.herokuapp.com/
 
 ##
 
 **Folders and files structure** 
 
-https://gin-mvc-starter.onrender.com/structure
+https://gin-mvc-starter.herokuapp.com/structure
 
 ![go gin mvc starter - folders & files](https://raw.githubusercontent.com/afif-dev/go-gin-mvc-starter/main/static/img/go-gin-mvc-structure.jpg)
 
